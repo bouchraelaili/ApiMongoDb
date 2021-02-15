@@ -9,6 +9,7 @@ function GetSubscriber() {
       <tr>
                 <td>${response.data[index].name}</td>
                 <td>${response.data[index].subscribertochannel}</td>
+                <td>${response.data[index].subscribeDate}</td>
                 <td><button class="btn btn-success" onclick="updatesub('${response.data[index]._id}')"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i>Update</button>
                 <button class="btn btn-danger" onclick="deleteSub('${response.data[index]._id}')"><i class="fa fa-trash fa-lg" aria-hidden="true"></i>Delete</button></td>
             </tr>
@@ -48,8 +49,9 @@ var subscribertochannel = document.getElementById('subscribertochannel').value;
 //update
 function updatesub(id) {
 
-    var nameup = document.getElementById('Name').value;
+var nameup = document.getElementById('Name').value;
 var subscribertochannelup = document.getElementById('subscribertochannel').value;
+
     obj = {
         name : nameup,
         subscribertochannel : subscribertochannelup
