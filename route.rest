@@ -1,0 +1,22 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/602910e8c07f253b7400b013
+
+
+###
+POST http://localhost:3000/subscribers
+
+{
+    "name": "Bouchraelaili",
+    "subscribertochannel": "test"
+}
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Bouchraelaili",
+    "subscribertochannel": "test"
+}
